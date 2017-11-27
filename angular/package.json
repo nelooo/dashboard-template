@@ -2,9 +2,7 @@
   "name": "urban",
   "version": "0.0.0",
   "description": "",
-  "dependencies": {},
-  "repository": {},
-  "devDependencies": {
+  "dependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "^2.0.0",
     "grunt-concurrent": "^1.0.0",
@@ -32,12 +30,17 @@
     "karma-jasmine": "^0.3.5",
     "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-tasks": "^3.1.0",
-    "time-grunt": "^1.0.0"
+    "time-grunt": "^1.0.0",
+    "http-server": "^0.10.0"
   },
+  "repository": {},
   "engines": {
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
+    "start": "http-server ./dist/",
+    "postinstall": "bower install --allow-root && grunt build --force",
+    "preinstall": "npm install bower grunt-cli"
   }
 }
