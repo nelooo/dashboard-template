@@ -1,0 +1,8 @@
+angular/.tmp/
+angular/app/npm-debug.log
+angular/bower_components/
+angular/dist/
+angular/node_modules/
+key.json.enc
+node_modules/
+npm-debug.log
